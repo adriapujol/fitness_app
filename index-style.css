@@ -1,0 +1,24 @@
+nav {
+    height: 10vh;
+}
+
+.search-bar {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    color: white
+}
+
+.search-bar:focus {
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+    border-bottom: 3px solid white;
+}
+.lupa {
+    transition: all .2s ease-in-out;
+}
+.lupa:hover {
+    transform: scale(1.1);
+}
