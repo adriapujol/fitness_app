@@ -2,9 +2,9 @@ nav {
     /* height: 10vh; */
 }
 
-.content {
-    /* height: 100%; */
-}
+/* .content {
+    height: 100%;
+} */
 
 #search {
     margin: 0 auto;
@@ -53,6 +53,8 @@ nav {
 
 .container-category {
     width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 .workout-card {
     margin: 10px 75px 10px 75px;
