@@ -1,0 +1,42 @@
+nav {
+    height: 10vh;
+}
+
+.row {
+    height: 90vh;
+}
+
+form {
+    padding: 60px 40px 60px 40px;
+}
+
+.btn-signin {
+    background-color: black;
+    border-radius: 0;
+    border: none;
+    margin: 20px 70px 20px 70px;
+}
+
+.btn-signin:hover {
+    background-color: #3E3E3E;
+}
+
+.input-field {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.input-field:focus {
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+    border-bottom: 2px solid black;
+}
+.try-it {
+    color: black;
+}
+
+.try-it:hover {
+    color: black;
+}

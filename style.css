@@ -1,0 +1,19 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.container-fluid {
+    background: url(img/bg_img.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo-text {
+    color: white;
+}
+
+
