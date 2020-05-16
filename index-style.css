@@ -1,5 +1,9 @@
 nav {
-    height: 10vh;
+    /* height: 10vh; */
+}
+
+.content {
+    /* height: 100%; */
 }
 
 #search {
@@ -11,7 +15,6 @@ nav {
     border: none;
     border-bottom: 1px solid white;
     border-radius: 0;
-    color: white;
     width: 30vw;
 }
 
@@ -31,6 +34,7 @@ nav {
 .nav-text-style {
     color: white;
     letter-spacing: 5px;
+    margin-right: 20px;
 }
 
 .nav-text-style:hover {
@@ -45,4 +49,32 @@ nav {
 
 .profile-icon:hover {
     transform: scale(1.1);
+}
+
+.container-category {
+    width: 100%;
+}
+.workout-card {
+    margin: 10px 75px 10px 75px;
+    letter-spacing: 5px;
+}
+
+/* .workout-card h1, h6 {
+    margin: 5px;
+} */
+
+.img-box {
+    background-color: #3D3D3D;
+    padding: 20px;
+}
+
+.img-box img {
+    height: 300px;
+}
+
+.small-card {
+    margin: 10px;
+}
+.small-card img {
+    height: 150px;
 }
