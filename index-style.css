@@ -1,5 +1,10 @@
-nav {
-    /* height: 10vh; */
+
+.row {
+    width: 100%;
+}
+
+.content {
+    margin-top: 3%;
 }
 
 
@@ -7,6 +12,15 @@ nav {
     margin: 0 auto;
 }
 
+.search-block {
+    position: absolute; 
+    left: 50%; 
+    transform: translatex(-50%); 
+}
+
+.navbar-right {
+    margin-left: auto;
+}
 .search-bar {
     background-color: rgba(0, 0, 0, 0) !important;
     border: none;
@@ -25,13 +39,13 @@ nav {
     transition: all .2s ease-in-out;
 }
 .lupa:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .nav-text-style {
     color: white;
     letter-spacing: 5px;
-    margin-right: 20px;
+    margin-right: 1em;
 }
 
 .nav-text-style:hover {
@@ -53,9 +67,18 @@ nav {
     margin: 0px;
     padding: 0px;
 }
+
+.container-cards {
+    width: 100%;
+}
 .workout-card {
     margin: 10px 75px 10px 75px;
     letter-spacing: 5px;
+    transition: all .2s ease-in-out;
+}
+
+.workout-card:hover {
+    transform: scale(1.1);
 }
 
 .img-box {
@@ -73,3 +96,41 @@ nav {
 .small-card img {
     height: 150px;
 }
+
+
+@media only screen and (max-width: 1070px) {
+    .img-box img {
+        height: 220px;
+    }
+    .small-card img {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 993px) {
+    .navbar-content {
+        display: block;
+    }
+    .search-block {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        transform: translatex(0); 
+    }
+    .search-bar {
+        width: 60vw;
+    }
+    .navbar-right {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
