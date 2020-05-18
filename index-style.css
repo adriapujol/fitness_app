@@ -21,7 +21,9 @@
 .navbar-right {
     margin-left: auto;
 }
+
 .search-bar {
+    color: white;
     background-color: rgba(0, 0, 0, 0) !important;
     border: none;
     border-bottom: 1px solid white;
@@ -123,8 +125,9 @@
         width: 60vw;
     }
     .navbar-right {
-        display: flex;
+        /* display: flex;
         justify-content: center;
+        align-items: center; */
     }
 }
 
