@@ -2,9 +2,6 @@ nav {
     /* height: 10vh; */
 }
 
-/* .content {
-    height: 100%;
-} */
 
 #search {
     margin: 0 auto;
@@ -60,10 +57,6 @@ nav {
     margin: 10px 75px 10px 75px;
     letter-spacing: 5px;
 }
-
-/* .workout-card h1, h6 {
-    margin: 5px;
-} */
 
 .img-box {
     background-color: #3D3D3D;
