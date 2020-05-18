@@ -12,6 +12,15 @@
     margin: 0 auto;
 }
 
+.search-block {
+    position: absolute; 
+    left: 50%; 
+    transform: translatex(-50%); 
+}
+
+.navbar-right {
+    margin-left: auto;
+}
 .search-bar {
     background-color: rgba(0, 0, 0, 0) !important;
     border: none;
@@ -99,8 +108,23 @@
 }
 
 @media only screen and (max-width: 993px) {
+    .navbar-content {
+        display: block;
+    }
+    .search-block {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        transform: translatex(0); 
+    }
     .search-bar {
-        width: 70vw;
+        width: 60vw;
+    }
+    .navbar-right {
+        display: flex;
+        justify-content: center;
     }
 }
 
