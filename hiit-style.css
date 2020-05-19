@@ -1,0 +1,131 @@
+
+h1 {
+    letter-spacing: 10px;
+}
+
+.row {
+    width: 100%;
+}
+
+.content {
+    margin-top: 3%;
+}
+
+
+#search {
+    margin: 0 auto;
+}
+
+.search-block {
+    position: absolute; 
+    left: 50%; 
+    transform: translatex(-50%); 
+}
+
+.navbar-right {
+    margin-left: auto;
+}
+
+.search-bar {
+    color: white;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    width: 30vw;
+}
+
+.search-bar:focus {
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+    border-bottom: 3px solid white;
+}
+.lupa {
+    transition: all .2s ease-in-out;
+}
+.lupa:hover {
+    transform: scale(1.2);
+}
+
+.nav-text-style {
+    color: white;
+    letter-spacing: 5px;
+    margin-right: 1em;
+}
+
+.nav-text-style:hover {
+    color: white;
+    font-weight: 600;
+}
+
+.profile-icon {
+    width: 50px;
+    transition: all .2s ease-in-out;
+}
+
+.profile-icon:hover {
+    transform: scale(1.1);
+}
+
+.container-workout {
+    width: 100%;
+}
+
+.container-workout h1 {
+    font-size: 4vw;
+}
+.workout-table {
+    margin: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 30%;
+}
+
+.workout-times {
+    margin: 30px;
+    color: white;
+    width: 30%;
+    font-size: 3vh;
+    font-weight: 500;
+}
+
+.workout-times td, th {
+    border: none;
+}
+
+
+@media only screen and (max-width: 993px) {
+    .navbar-content {
+        display: block;
+    }
+    .search-block {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        transform: translatex(0); 
+    }
+    .search-bar {
+        width: 60vw;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .container-fluid {
+        width: 100%;
+        padding: 0;
+    }
+    .workout-table {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
