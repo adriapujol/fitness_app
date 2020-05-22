@@ -63,6 +63,13 @@ h2 {
     opacity: 0.4;
  }
 
+.username-error {
+    color: red;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+}
+
 .try-it {
     color: black;
 }
