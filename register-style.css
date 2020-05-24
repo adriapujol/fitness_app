@@ -63,11 +63,23 @@ h2 {
     opacity: 0.4;
  }
 
-.username-error {
-    color: red;
+ .input-error {
+    visibility: hidden;
+    color: #e74c3c;
     font-size: 15px;
     font-weight: 400;
     font-style: italic;
+}
+
+.success-style .input-field {
+    border-bottom: 1px solid #2ecc71;
+}
+.error-style .input-field {
+    border-bottom: 1px solid #e74c3c;
+}
+
+.error-style .input-error {
+    visibility: visible;
 }
 
 .try-it {
