@@ -27,25 +27,37 @@
                     <div class="content d-flex justify-content-center align-items-center">  
                         <div class="form-box mb-5">
                             <h2 class="create-title mb-4">Create an Account</h2>
-                            <form action="/index.html" method="GET" class="form-signin bg-white d-flex flex-column" id="form">
+                            <!-- Utilitzo GET perquè funcioni sense servidor-->
+                            <form action="/index.html" method="GET" class="form-signin bg-white d-flex flex-column needs-validation" id="form">
                                 <div class="form-group font-weight-bold">
                                     <label for="username">Username</label>
-                                    <input type="text" class="form-control input-field" id="username" aria-describedby="username" placeholder="Username">
+                                    <input type="text" class="form-control input-field" id="username" name="username" aria-describedby="username" placeholder="Username">
                                     <small class="input-error">*Wrong username</small>
                                 </div>
                                 <div class="form-group font-weight-bold">
                                     <label for="email">E-mail</label>
-                                    <input type="email" class="form-control input-field" id="email" aria-describedby="email" placeholder="E-mail">
+                                    <input type="email" class="form-control input-field" id="email" name="email" aria-describedby="email" placeholder="E-mail">
                                     <small class="input-error">*Wrong e-mail</small>
                                 </div>
                                 <div class="form-group font-weight-bold">
+                                    <label for="province">Province</label>
+                                    <select class="form-control input-field" name="province" id="province">
+                                        <option selectedValue=""></option>
+                                        <option value="Barcelona">Barcelona</option>
+                                        <option value="Girona">Girona</option>
+                                        <option value="Lleida">Lleida</option>
+                                        <option value="Tarragona">Tarragona</option>
+                                    </select>
+                                    <small class="input-error">*Wrong password</small>
+                                </div>
+                                <div class="form-group font-weight-bold">
                                     <label for="password">Password</label>
-                                    <input type="password" class="form-control input-field" id="password" placeholder="Password">
+                                    <input type="password" class="form-control input-field" id="password" name="password" placeholder="Password">
                                     <small class="input-error">*Wrong password</small>
                                 </div>
                                 <div class="form-group font-weight-bold">
                                   <label for="password">Repeat Password</label>
-                                  <input type="password" class="form-control input-field" id="password2" placeholder="Repeat Password">
+                                  <input type="password" class="form-control input-field" id="password2" name="password2" placeholder="Repeat Password">
                                   <small class="input-error">*Wrong password</small>
                                 </div>
                                 <div class="btn-box text-center">
