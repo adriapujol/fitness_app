@@ -1,25 +1,20 @@
-const form = document.getElementById('form');
-const username = document.getElementById('username');
-const email = document.getElementById('email');
-const province = document.getElementById('province');
-const password = document.getElementById('password');
-const password2 = document.getElementById('password2');
-const btnSubmit = document.getElementById('btn-submit');
-
-form.addEventListener('submit', (e) => {
+document.getElementById('form').addEventListener('submit', (e) => {
     if (checkInputs() > 0) {
         e.preventDefault();
     }
-
-    // e.preventDefault();
-    // checkInputs();
-    
 });
 
 
 const checkInputs = () => {
+    const username = document.getElementById('username');
+    const email = document.getElementById('email');
+    const province = document.getElementById('province');
+    const password = document.getElementById('password');
+    const password2 = document.getElementById('password2');
     //error count
     let eCount = 0;
+    //passowrd accepted
+    let pwdOK = false;
 
     // get inputs values
     const usernameValue = username.value.trim();
@@ -64,6 +59,7 @@ const checkInputs = () => {
         eCount++;
     } else {
         setSuccessFor(password);
+        pwdOK = true;
     }
 
     if (password2.value === '') {
@@ -74,8 +70,11 @@ const checkInputs = () => {
         setErrorFor(password2, 'Passwords does not match');
         eCount++;
 
-    } else {
+    } else if (pwdOK) {
         setSuccessFor(password2);
+    } else {
+        setErrorFor(password2, "Password is not valid");
+        eCount++;
     }
 
     return eCount;
@@ -92,7 +91,6 @@ const setErrorFor = (input, message) => {
 const setSuccessFor = (input) => {
     const formControl = input.parentElement;
     formControl.classList.remove('error-style');
-    // formControl.classList.add('success-style');
     input.classList.remove('is-invalid');
     input.classList.add('is-valid');
 };

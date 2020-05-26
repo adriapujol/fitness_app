@@ -1,15 +1,11 @@
+//User database for test
+
 const user1 = {email: 'john@doe.com', password: 'abc1234'};
 const user2 = {email: 'jane@doe.com', password: '1234abc'};
-
-
 let users = [user1, user2];
 
-const form = document.getElementById('form');
-const email = document.getElementById('email');
-const passowrd = document.getElementById('password');
 
-
-form.addEventListener('submit', (e) => {
+document.getElementById('form').addEventListener('submit', (e) => {
     if (checkInputs() > 0) {
         e.preventDefault();
     };
@@ -18,6 +14,9 @@ form.addEventListener('submit', (e) => {
 });
 
 const checkInputs = () => {
+    const email = document.getElementById('email');
+    const passowrd = document.getElementById('password');
+    // Error count
     let eCount = 0;
     let user = existEmail(email.value, users);
 
