@@ -71,12 +71,12 @@ h2 {
     font-style: italic;
 }
 
-.success-style .input-field {
+/* .success-style .input-field {
     border-bottom: 1px solid #2ecc71;
 }
 .error-style .input-field {
     border-bottom: 1px solid #e74c3c;
-}
+} */
 
 .error-style .input-error {
     visibility: visible;
